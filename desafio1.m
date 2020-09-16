@@ -1,12 +1,12 @@
 clc, clear all, close all
 
-disp('Algoritmo para projeto de compensadores - Metódo "A curva de reação"');
+disp('Algoritmo para projeto de compensadores - MetÃ³do "A curva de reaÃ§Ã£o"');
 
 disp('Informe os coeficientes da planta');
 num = input('Numerador (entre colchetes): ');
 den = input('Denominador (entre colchetes): ');
 
-disp('A planta é a seguinte: ');
+disp('A planta Ã© a seguinte: ');
 g = tf(num, den)
 
 disp('Trace a reta tangente a curva (Voce tem 40 segundos para isso)');
@@ -40,7 +40,7 @@ end
 
 syms s
 
-disp('A função de transferencia do compensador é a seguinte: ')
+disp('A funÃ§Ã£o de transferencia do compensador Ã© a seguinte: ')
 c = tf([kp*td kp kp/ti], [1 0])
 
 figure(1)
